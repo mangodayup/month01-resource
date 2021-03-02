@@ -1,0 +1,23 @@
+作业
+1.三合一
+2.当天练习独立完成
+3.需求：小明使用手机打电话
+4.需求：
+    玩家攻击敌人,敌人受伤(减少血量,掉落装备),如果死亡,则加分.
+    敌人攻击玩家,玩家受伤(减少血量,闪现红屏),如果死亡,则游戏结束.
+5.实现员工管理系统
+class EmployeeModel:
+    def __init__(self, eid=0, did=0, name="", money=0):
+        self.eid = eid # 员工编号
+        self.did = did # 部门编号
+        self.name = name
+        self.money = money
+5. (选做)2048核心算法
+    -- 定义向左移动函数,改变list_map中的数据
+     思路：将list_map每行赋值给list_merge
+          调用合并函数(练习2)
+
+    -- 定义向右移动函数,改变list_map中的数据
+     思路：将list_map每行,反转,赋值给list_merge
+          调用合并函数
+          因为切片反转会创建新容器,所以还需要将list_merge还原给list_map
